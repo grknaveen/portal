@@ -1,35 +1,15 @@
-import {Button, ButtonGroup, Divider, Footer} from "react-daisyui";
+import {Button, ButtonGroup} from "react-daisyui";
 
-function footer(){
+function Footer()
+{
     return(
-        <div style={style}>
-            <div>
-
-                <a className="link link-hover">Branding</a>
-                <a className="link link-hover">Design</a>
-                <a className="link link-hover">Marketing</a>
-                <a className="link link-hover">Advertisement</a>
-            </div>
-            <div>
-
-                <a className="link link-hover">Branding</a>
-                <a className="link link-hover">Design</a>
-                <a className="link link-hover">Marketing</a>
-                <a className="link link-hover">Advertisement</a>
-            </div>
+        <div className="w-full h-16 bg-base-100 z-50 border-t-2 border-white fixed left-0 bottom-0 flex justify-center items-center text-black text-2xl">
+            <span className="pl-5">NFT selected :</span>
+            <ButtonGroup >
+                <Button active>Burn</Button>
+                <Button>Claim</Button>
+            </ButtonGroup>
         </div>
     )
 }
-export default footer;
-
-const style = {
-    backgroundColor: "#F8F8F8",
-    borderTop: "1px solid #E7E7E7",
-    textAlign: "center",
-    padding: "20px",
-    position: "fixed",
-    left: "0",
-    bottom: "0",
-    height: "60px",
-    width: "100%"
-};
+export default Footer;

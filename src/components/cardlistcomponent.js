@@ -4,7 +4,7 @@ import {Button, ButtonGroup, Divider} from "react-daisyui";
 function Cardlist() {
     return(
     <div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:card-side">
+        <div class="justify-items-center grid grid-cols-2 md:grid-cols-4 gap-4 lg:card-side">
             <Card/>
             <Card/>
             <Card/>
@@ -21,13 +21,7 @@ function Cardlist() {
             <Card/>
         </div>
 
-        <div style={style}>
 
-            <ButtonGroup >
-                <Button active>Burn</Button>
-                <Button>Claim</Button>
-            </ButtonGroup>
-        </div>
     </div>
     )
 }
@@ -40,9 +34,6 @@ const style = {
     borderTop: "1px solid #E7E7E7",
     textAlign: "center",
     padding: "20px",
-    position: "fixed",
-    left: "0",
-    bottom: "0",
     height: "10%",
     width: "100%",
 

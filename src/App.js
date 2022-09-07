@@ -1,6 +1,6 @@
 import './App.css';
 import Cardlist from "./components/cardlistcomponent";
-import footer from "./components/footer";
+import Footer from "./components/footer";
 import Headercomponent from "./components/headercomponent";
 
 function App() {
@@ -9,10 +9,19 @@ function App() {
     <div>
         <link href="App.css" rel="stylesheet"/>
         <Headercomponent/>
+        <div style={style}>
         <Cardlist/>
-        <footer/>
+        </div>
+        <div style={style}>
+            <Footer/>
+        </div>
     </div>
   );
 }
 
 export default App;
+
+const style = {
+    paddingTop: "5%",
+
+};
