@@ -1,0 +1,26 @@
+function Headercomponent() {
+    return (
+        <div class={style}>
+
+            <div className="navbar bg-base-100 ">
+                <div className="flex-1">
+                    <a className="btn btn-ghost normal-case text-xl">Burning Portal</a>
+                </div>
+                <div className="flex-none">
+                    <ul className="menu menu-horizontal p-0">
+                        <li><a>Connect wallet</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    )
+}
+export default Headercomponent;
+
+
+const style = {
+
+    position: "fixed",
+    marginTop: '100px',
+};
