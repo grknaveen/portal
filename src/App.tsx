@@ -106,6 +106,7 @@ const Content: FC = () => {
         }
       );
       let NFts = [{}];  //Accumulate NFTs for Final Output
+      NFts.pop();
       for (let i = 0; i < accounts.length; i++) {
         let amountI = accounts[i].account.data["parsed"]["info"]["tokenAmount"]["uiAmount"];
         let mint_s = accounts[i].account.data["parsed"]["info"]["mint"]
