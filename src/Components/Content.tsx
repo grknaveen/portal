@@ -73,6 +73,7 @@ const Content: FC = () => {
     return (
       <div className="App">
         <button onClick={getNFTsFromWallet}>Get NFTs</button>
+
         <WalletMultiButton />
       </div>
     )
